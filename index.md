@@ -1,0 +1,40 @@
+---
+title: SeaGuard Firewall Privacy Policy
+---
+
+# SeaGuard Firewall Privacy Policy
+
+_Last updated: November 6, 2026_
+
+## Summary
+SeaGuard Firewall is a local firewall for Android. It runs entirely on your device. We have no servers, no accounts, no analytics, no advertising, and we do not collect, sell or share your personal data.
+
+## How SeaGuard Firewall uses the VPN permission
+SeaGuard Firewall uses Android's VPN service (`VpnService`) only to apply the per-app network rules you choose. Traffic of apps you block is dropped on your device. Traffic of other apps is not routed through SeaGuard Firewall, except while Kill Switch, the Focus Timer or a schedule that blocks all apps is active, when every app is blocked until it ends or you turn it off. SeaGuard Firewall does not connect to any remote VPN server and does not inspect or store the content of your traffic.
+
+## Data stored on your device
+Your firewall rules, schedules, settings, the app-lock PIN (stored only as a salted hash) and a short log of connections that SeaGuard Firewall blocked (app name, destination IP address, port and protocol, up to 300 entries kept for at most 7 days), your Allowlist choices and any running timers (temporary allow or block, Focus Timer) are stored only on your device. You can clear the log in the Logs tab, and you can reset all rules in Settings. Uninstalling SeaGuard Firewall removes all of this data. SeaGuard Firewall does not upload it anywhere.
+
+## Data usage
+If you open Data Usage and allow Android's "Usage access", SeaGuard Firewall reads the data totals Android keeps for each app (bytes used on Wi-Fi and mobile data) to show them to you. These numbers are read on your device, are not stored by SeaGuard Firewall, and are never uploaded. You can withdraw the permission at any time in Android settings.
+
+## Backup and export
+Backup & Restore and Export CSV create text or a file only when you tap them and hand it to Android's share sheet or file picker; you choose where it goes. SeaGuard Firewall itself sends nothing. A backup contains your block rules, schedules and a few preferences, never your PIN. A CSV export contains the blocked-connection log (time, app, destination IP, port, protocol).
+
+## Permissions
+- **VPN (BIND_VPN_SERVICE):** to apply your firewall rules.
+- **See installed apps (QUERY_ALL_PACKAGES):** to list your apps so you can set a rule for each one.
+- **Notifications:** to show the firewall status, the pause button and new-app alerts.
+- **Foreground service:** to keep the firewall running.
+- **Start at boot:** to restore protection after a restart, only if you turn this on.
+- **Network state:** to apply Wi-Fi and mobile-data rules.
+- **Usage access (PACKAGE_USAGE_STATS):** optional, to show per-app data use.
+- **Internet:** a standard permission of the app framework; SeaGuard Firewall itself makes no network connections and uploads nothing.
+- **Vibrate:** for haptic feedback.
+
+## Children
+SeaGuard Firewall is not directed to children under 13 and does not knowingly collect any personal information.
+
+## Changes and contact
+If this policy changes, the new version will be published in the app and on the store listing.
+Questions: support.seaguard@gmail.com
